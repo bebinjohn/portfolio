@@ -1,0 +1,147 @@
+.img{
+    background-image: url("https://media.giphy.com/media/l3q2RgN7WUjeUUXm0/giphy.gif");
+    height:37rem;
+   
+
+}
+.f{ 
+    font-family: sans-serif;
+    margin-top: 20%;
+    font-size: 5vw;
+    color: white;
+}
+.f1{
+    font-size: 17px;
+    color: white;
+    font-family: Sofia;
+}
+.f2{
+    margin-top: 20%;
+    font-size: 5vw;
+    color: white;
+    font-family: Lobster;
+    background-image: linear-gradient(red,pink);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        color: transparent;
+}
+.f3{
+    font-size:22px ;
+    font-weight: bold;
+    
+}
+.n{
+    background-color: #003366;
+    border-width: 2px;
+    border-color: #003366;
+    border-style: solid;
+}
+.link{
+    color: white;
+    margin-left: 35px;
+}
+#link{
+    color: white;
+    text-decoration: none;
+}
+.link:hover{
+    color: springgreen;
+    text-decoration: none;
+}
+#link:hover{
+    color: springgreen;
+    text-decoration: none;
+}
+.edu-bold{
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+.edu-nor{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.lob{
+    font-family: Arbutus;
+    font-size: 30px;
+}
+.prog{
+    width: 40%;
+    height: 25px;
+    border: 2px solid lightblue;
+    margin-top: 1%;
+}
+.skills{
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+
+}
+.prog-font{
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: whitesmoke;
+}
+.effect-card{
+    border: 2px solid silver;
+    height: 210px;
+    transition: 0.3s ease-in-out;
+}
+.effect-card:hover{
+    height: 360px;
+}
+.e-card{
+    border: 2px solid silver;
+    height: 245px;
+    transition: 0.3s ease-in-out;
+}
+.e-card:hover{
+    height: 360px;
+}
+.content{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+     opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.content:hover{
+     opacity:1;
+     margin-top: -10px;
+transition-delay: 0.3s;
+}
+.footer{
+    margin-top: 150px;
+}
+
+@media only screen and (max-width: 768px) {
+    .f{
+        margin-top: 60%;
+    }
+    .f1{
+        text-align: center;
+    }
+    .f2{
+        margin-top: 60%;
+    }
+    .link{
+        margin-left: 0%;
+    }
+    .prog{
+        margin-top: 2%;
+        margin-left: 8%;
+    }
+    .effect-card{
+        height: 380px;
+    }
+    .e-card{
+        height: 400px;
+    }
+    
+    .content{
+        opacity:1;
+        margin-top: -10px;
+    }
+}
