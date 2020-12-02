@@ -24,6 +24,7 @@
     "jquery": "^3.5.1",
     "lite-server": "^2.6.1",
     "popper.js": "^1.16.1",
+    "rimraf": "^3.0.2",
     "uglifyjs": "^2.4.11",
     "usemin": "^0.6.0"
   }
