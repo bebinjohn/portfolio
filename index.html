@@ -258,6 +258,7 @@ else {
     $('#navbar_top').addClass("fixed-top");
     }
     const sub=(e)=>{
+        e.preventDefault();
         const data={
             Name:e.target[0].value,
             Email:e.target[1].value,
