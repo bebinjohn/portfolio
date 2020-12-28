@@ -115,7 +115,33 @@ transition-delay: 0.3s;
 .footer{
     margin-top: 150px;
 }
-
+.contact{
+    font-family: Arbutus;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+.bor{
+    display: flex;
+    justify-content: center;
+    
+}
+.form{
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 50px 50px 50px 50px;
+    width: 38%;
+    display:flex;
+    flex-flow: column  ;
+}
+.input{
+    border: 0;
+    border-bottom: 1px solid black;
+}
+.input:focus{
+    outline:none;
+    border-bottom: 1px solid black;
+}
 @media only screen and (max-width: 768px) {
     .f{
         margin-top: 60%;
@@ -143,5 +169,8 @@ transition-delay: 0.3s;
     .content{
         opacity:1;
         margin-top: -10px;
+    }
+    .form{
+        width: 65%;
     }
 }
