@@ -18,7 +18,6 @@
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
     <link rel="stylesheet" href="./index.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     
     </head>
     <body>
@@ -36,6 +35,9 @@
             <P class="offset-sm-3  col-sm-7  f1 ">
                 I am an second year cs undergraduate student and an<span class="f3"> Front End Developer.</span>
             </P>
+            </div>
+            <div style="display: flex; justify-content: center;">
+                <a href="https://drive.google.com/file/d/1NoIg_riuKKhaZzyHrdlPl3BrX37U7eNf/view?usp=sharing" class="a">View Resume</a>
             </div>
     </div>
     </header>
@@ -57,12 +59,12 @@
             </nav>
             <div id="edu"></div>
             <section>
-                <div data-aos="zoom-in" class="container footer">
+                <div class="container footer">
                     <div class="row justify-content-center lob">
                             EDUCATION
                     </div>
                 </div>
-                <div data-aos="zoom-in" class="container mt-5  jumbotron ">
+                <div class="container mt-5  jumbotron ">
                     <div class="row">
                         <div class="col-sm-7 edu-bold">
                             BACHELOR OF ENGINEERING ,COMPUTER SCIENCE AND ENGINEERING
@@ -80,12 +82,12 @@
 
             </div>
             <section>
-                <div data-aos="flip-up" class="container footer">
+                <div class="container footer">
                     <div class="row justify-content-center lob">
                             SKILLS
                     </div>
                 </div>
-                <div data-aos="fade-up-right" data-aos-duration="1500"class="container mt-4">
+                <div  data-aos-duration="1500"class="container mt-4">
                     <div class="row justify-content-center">
                         <div class="col-1" >
                             <img src="https://img.icons8.com/color/48/000000/css3.png"/>
@@ -152,7 +154,7 @@
                 </div>
                 <div class="jumbotron mt-4 ml-5 mr-5">
                 <div class="container mt-5  ">
-                    <div class="row justify-content-center" data-aos="flip-left" > 
+                    <div class="row justify-content-center" > 
                         <div class="col-12 col-sm-4 ">
                         <div class="card effect-card ">
                                 <img class="card-img-top " src="./Images//download.jpg" alt="Covid-19">
@@ -174,7 +176,7 @@
                     </div>
                 </div>
                 <div class="container mt-5">
-                    <div class="row justify-content-center " data-aos="flip-right"> 
+                    <div class="row justify-content-center "> 
                         <div class="col-12 col-sm-4 ">
                         <div class="card e-card ">
                                 <img class="card-img-top " src="./Images//booking.jpg"alt="Covid-19">
@@ -258,19 +260,25 @@ else {
     $('#navbar_top').addClass("fixed-top");
     }
     const sub=(e)=>{
+        console.log(e)
+        var s={
+            Name:"",
+            Message:"",
+            Email:""
+        };
         e.preventDefault();
-        const data={
-            Name:e.target[0].value,
-            Email:e.target[1].value,
-            Message:e.target[2].value
+        for(var i in e.target){
+            if(i==3) break;
+            s={
+                ...s,
+               [ e.target[i].id] : e.target[i].value
+            }
         }
-        fetch("https://portfolio-b9e82-default-rtdb.firebaseio.com/members.json",{
+        fetch("https://react-hooks-1380a-default-rtdb.firebaseio.com/ingredients.json",{
     method:'POST',
-    body:JSON.stringify(data),
+    body:JSON.stringify(d),
     headers:{'Content-type':'application/json'}
-  }).then((res)=>{
-      alert("Thank you for contacting me!!");
-  })
+  }).
     }
     
     </script>
